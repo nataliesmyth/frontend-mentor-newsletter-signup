@@ -120,12 +120,14 @@ li {
     padding-top: 0;
     list-style: none;
 }
+
 label {
     width: 100%;
 }
 
 .list-icon {
     display: inline;
+    padding-top: 5px;
 }
 
 .list-item {
@@ -139,11 +141,14 @@ input {
 
 fieldset {
     border: none;
+    padding: 0;
 }
 
 legend {
     font-size: .75em;
     font-weight: var(--fw-700);
+    padding-top: 1em;
+    padding-bottom: .5em;
 }
 
 .email-input {
