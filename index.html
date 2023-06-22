@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
@@ -16,32 +23,70 @@
 </head>
 <body>
 
-  <!-- Sign-up form start -->
+  <main class="main">
+    <div class="col col-img">
 
-  Stay updated!
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+    </div>
+    <div class="col col-content">
 
-  Join 60,000+ product managers receiving monthly updates on:
+      
+      <!-- Sign-up form start -->
+      
+      <h1>Stay updated!</h1>
+      
+      <p class="lead">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul>
+        <li>
+          <span class="list-icon"><img src="./assets/images/icon-list.svg" alt=""></span>
+          <p class="list-item">
+            Product discovery and building what matters
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+          </p>
+        </li>
+        <li>
+          <span class="list-icon"><img src="./assets/images/icon-list.svg" alt=""></span>
+          <p class="list-item">
+            Measuring to ensure updates are a success
+          </p>
+        </li>
+        <li>
+          <span class="list-icon"><img src="./assets/images/icon-list.svg" alt=""></span>
+          <p class="list-item">
+            And much more!
+          </p>
+        </li>
+      </ul>
+    
+      <form>
+        <p>
+          <fieldset>
+            <legend>Email address</legend>
+            <label for="mail">
+              <input class="email-input" type="email" id="mail" name="usermail" placeholder="email@company.com" required 
+              pattern="/^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i"
+            >
+          <input class="submit-btn" type="submit" value="Subscribe to monthly newsletter">
+          </label>
+        </fieldset>
+      </p>
+    </form>
+  </div>
+</main>
 
-  Email address
-  email@company.com
+<!-- Sign-up form end -->
 
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
+<!-- Success message start -->
+  
+  <!-- Thanks for subscribing!
+  
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+  
+  Dismiss message -->
+  
   <!-- Success message end -->
   
   <div class="attribution">
