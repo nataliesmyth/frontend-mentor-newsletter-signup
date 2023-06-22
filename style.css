@@ -120,6 +120,9 @@ li {
     padding-top: 0;
     list-style: none;
 }
+label {
+    width: 100%;
+}
 
 .list-icon {
     display: inline;
@@ -142,8 +145,9 @@ legend {
     font-size: .75em;
     font-weight: var(--fw-700);
 }
+
 .email-input {
-    padding: 1em;
+    padding: 1em .75em;
     border: 1px solid var(--clr-neutral-light);
     border-radius: 10px;
     opacity: .5;
