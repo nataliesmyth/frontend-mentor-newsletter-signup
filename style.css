@@ -107,6 +107,7 @@ h1 {
 
 .col-content {
     margin: 1em 2em;
+    max-width: 400px;
 }
 
 ul {
@@ -143,6 +144,11 @@ input {
 fieldset {
     border: none;
     padding: 0;
+    text-align: center;
+}
+
+fieldset > * {
+  max-width: 100%;
 }
 
 legend {
@@ -170,7 +176,32 @@ legend {
 }
 
 @media (min-width: 700px) {
-    .main {
-        flex-direction: row-reverse;
-    }
+  .main {
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 2em;
+  }
+
+  img {
+    margin-left: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+    letter-spacing: .05em;
+    margin-bottom: 0;
+  }
+
+  .lead {
+    padding: 1em 0;
+  }
+
+  .email-input {
+    width: 93%;
+
+  }
+
+  li {
+    padding: .5em 0;
+  }
 }
