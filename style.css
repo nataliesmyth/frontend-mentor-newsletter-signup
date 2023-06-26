@@ -183,6 +183,43 @@ legend {
   font-weight: var(--fw-700);
 }
 
+.user-email {
+  font-weight: 700;
+}
+
+.success-page {
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  margin: 2em auto; */
+}
+
+.success-page {
+  margin-top: 2em;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.success-page > * {
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.success-title {
+  margin: 0;
+  line-height: 1.15em;
+  margin-bottom: 1em;
+}
+
+.success-img {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.success-exit-button {
+  margin-top: 11em;
+}
+
 .btn {
     background-color: var(--clr-neutral-dark);
     color: var(--clr-white);
