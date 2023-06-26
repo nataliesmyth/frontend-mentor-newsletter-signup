@@ -237,6 +237,14 @@ legend {
     width: 100%;
 }
 
+.attribution {
+  color: var(--clr-white);
+}
+
+.attribution a {
+  color: var(--clr-white)
+}
+
 @media (min-width: 770px) {
   main {
     max-width: 900px;
