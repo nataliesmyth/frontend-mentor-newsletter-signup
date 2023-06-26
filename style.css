@@ -239,7 +239,20 @@ legend {
 
 @media (min-width: 770px) {
   main {
-    max-width: 1000px;
+    max-width: 900px;
+  }
+  main > .success-page {
+    width: 1000px;
+    margin: 2em auto;
+  }
+
+  .success-page > * {
+    padding-top: 1em;
+  }
+  
+  .success-exit-button {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .signup-pg {
     justify-content: center;
