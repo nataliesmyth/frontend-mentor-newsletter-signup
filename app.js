@@ -1,7 +1,7 @@
 const signupForm = document.getElementById('signup-form');
 const userEmail = document.getElementById('user-email');
 const signUpPage = document.getElementById('signup-page');
-const successPage = document.getElementById('success-page');
+const successPage = document.getElementById('success-pg');
 const dismiss = document.getElementById('dismiss')
 
 function updateSuccessMsg(email) {
@@ -27,7 +27,7 @@ function showErrors() {
 
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const email = signupForm.querySelector('#mail')
+    const email = signupForm.querySelector('#email')
     const valid = isValidEntry(email.value);
     if (!valid) {
         return showErrors();

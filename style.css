@@ -91,7 +91,7 @@ select {
 /* Utility class */
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 body {
@@ -106,7 +106,12 @@ h1 {
     margin-bottom: .5em;
 }
 
-.main {
+.wrapper {
+  background-color: hsl(var(--clr-neutral-mid));
+  min-height: 100vh;
+}
+
+.signup-pg {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +179,11 @@ legend {
     width: 100%;
 }
 
-.submit-btn {
+.submitted-email {
+  font-weight: var(--fw-700);
+}
+
+.btn {
     background-color: var(--clr-neutral-dark);
     color: var(--clr-white);
     padding: 1em;
@@ -184,9 +193,10 @@ legend {
 }
 
 @media (min-width: 770px) {
-  .main {
+  .signup-pg {
     justify-content: center;
     flex-direction: row-reverse;
+    margin: 1em;
     padding: 2em;
   }
 
@@ -194,14 +204,21 @@ legend {
     /* margin-left: 1em; */
   }
 
-  h1 {
-    font-size: 2.5em;
-    letter-spacing: .05em;
-    margin-bottom: 0;
+  .col-content {
+    max-width: 400px;
+    padding: 1em;
   }
 
-  .lead {
-    /* padding: 1em 0; */
+  fieldset {
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 2.85em;
+    letter-spacing: .05em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 2em;
   }
 
   li {
