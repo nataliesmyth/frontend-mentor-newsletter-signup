@@ -1,11 +1,11 @@
 :root {
   /* colors */
-  --bkd: 235 18% 26%;
-  --muted: 230 6% 69%;
-  --text: 230 29% 19%;
-  --bkg: 230 29% 99%;
-  --accent: 4 100% 68%;
-  --error: 4 58% 78%;
+  --clr-backdrop: 235 18% 26%;
+  --clr-muted: 230 6% 69%;
+  --clr-text: 230 29% 19%;
+  --clr-background: 230 29% 99%;
+  --clr-accent: 4 100% 68%;
+  --clr-error: 4 58% 78%;
   color-scheme: light;
 
     /* font weight */
@@ -101,8 +101,8 @@ select {
 body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    color: hsl(var(--text));
-    background-color: hsl(var(--bkd));
+    color: hsl(var(--clr-text));
+    background-color: hsl(var(--clr-backdrop));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ body {
 }
 
 main {
-  background-color: hsl(var(--bkg));
+  background-color: hsl(var(--clr-background));
   margin: 2em auto;
   /* border-radius: 10px; */
   max-width: 400px;
@@ -173,22 +173,22 @@ input {
   margin-bottom: 1em;
   padding: 1em;
   border-radius: var(--round--sm);
-  border: 1px solid hsl(var(--muted));
+  border: 1px solid hsl(var(--clr-muted));
   width: 100%;
-  color: hsl(var(--text));
+  color: hsl(var(--clr-text));
   transition: background-color 200ms var(--ease-elastic),
   box-shadow 200ms var(--ease-elastic);
 }
 
 input:focus {
   outline: 2px solid transparent;
-  box-shadow: 0px 0px 0px 3px hsl(230 29% 99%), 0px 0px 0px 6px hsl(var(--accent));
+  box-shadow: 0px 0px 0px 3px hsl(230 29% 99%), 0px 0px 0px 6px hsl(var(--clr-accent));
 }
 
 input.error {
-  background-color: hsl(var(--error) / 0.4);
-  box-shadow: 0 0 0 2px hsl(var(--accent));
-  color: hsl(var(--accent));
+  background-color: hsl(var(--clr-error) / 0.4);
+  box-shadow: 0 0 0 2px hsl(var(--clr-accent));
+  color: hsl(var(--clr-accent));
 }
 
 fieldset {
@@ -253,8 +253,8 @@ legend {
 }
 
 .btn {
-    background-color: hsl(var(--text));
-    color: hsl(var(--bkg));
+    background-color: hsl(var(--clr-text));
+    color: hsl(var(--clr-background));
     padding: 1em;
     border: none;
     border-radius: 10px;
@@ -263,7 +263,7 @@ legend {
 }
 
 .btn:hover {
-  background-color: hsl(var(--text) / 0.8);
+  background-color: hsl(var(--clr-text) / 0.8);
 }
 
 .btn:focus {
@@ -271,18 +271,18 @@ legend {
 }
 
 .btn:focus-visible {
-  box-shadow: 0px 0px 0px 3px hsl(var(--bkg)),
-    0px 0px 0px 6px hsl(var(--accent));
+  box-shadow: 0px 0px 0px 3px hsl(var(--clr-background)),
+    0px 0px 0px 6px hsl(var(--clr-accent));
 }
 
 /*** Footer ***/
 
 .attribution {
-  color: hsl(var(--bkg));
+  color: hsl(var(--clr-background));
 }
 
 .attribution a {
-  color: hsl(var(--bkg))
+  color: hsl(var(--clr-background))
 }
 
 @media (min-width: 770px) {
