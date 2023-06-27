@@ -11,6 +11,9 @@
     /* font weight */
     --fw-700: 700;
     --fw-400: 400;
+
+    /* transition */
+    --ease-in: cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 
 /* https://piccalil.li/blog/a-modern-css-reset */
@@ -176,13 +179,19 @@ input {
   border: 1px solid hsl(var(--clr-muted));
   width: 100%;
   color: hsl(var(--clr-text));
-  transition: background-color 200ms var(--ease-elastic),
-  box-shadow 200ms var(--ease-elastic);
+  transition: background-color 200ms var(--ease-in),
+    box-shadow 200ms var(--ease-in);
 }
 
 input:focus {
   outline: 2px solid transparent;
-  box-shadow: 0px 0px 0px 3px hsl(230 29% 99%), 0px 0px 0px 6px hsl(var(--clr-accent));
+  /* box-shadow: 0px 0px 0px 3px hsl(var(--clr-background)),  */
+  /* 0px 0px 0px 6px hsl(var(--clr-accent)); */
+  box-shadow: 0px 0px 0px 3px hsl(var(--clr-background));
+}
+
+input::placeholder {
+  color: hsl(var(--muted));
 }
 
 input.error {
@@ -211,7 +220,7 @@ legend {
 
 .email-input {
     padding: 1em;
-    border: 1px solid hsl(var(--));
+    /* border: 1px solid hsl(var(--clr-backdrop)); */
     border-radius: 10px;
     opacity: .5;
     width: 100%;
@@ -253,17 +262,18 @@ legend {
 }
 
 .btn {
-    background-color: hsl(var(--clr-text));
-    color: hsl(var(--clr-background));
-    padding: 1em;
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    transition: background-color 200ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: hsl(var(--clr-text));
+  color: hsl(var(--clr-background));
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  transition: background-color 200ms var(--ease-in),
+  box-shadow 200ms var(--ease-in);
 }
 
 .btn:hover {
-  background-color: hsl(var(--clr-text) / 0.8);
+  background: linear-gradient(.25turn, #FF496F, #FF5B3F)
 }
 
 .btn:focus {
