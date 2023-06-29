@@ -15,11 +15,6 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
@@ -61,12 +56,17 @@
       <form action="/success.html" id="signup-form">
         <fieldset>
           <legend>Email address</legend>
-          <label for="mail">
-            <input class="email-input" type="email" id="email" name="usermail" placeholder="email@company.com" required>
-            <p class="error-message hidden">Valid email required</p>
+            <p class="error-message hidden">Valid email plz</p>
+            <input 
+              type="email" 
+              class="email-input" 
+              id="email" 
+              name="usermail" 
+              placeholder="email@company.com" 
+              required>
             <button class="btn" type="submit" id="submitBtn" >Subscribe to monthly newsletter</button>
             
-          </label>
+
         </fieldset>
       </form>
     </div>

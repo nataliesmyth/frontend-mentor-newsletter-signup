@@ -183,28 +183,32 @@ input {
     box-shadow 200ms var(--ease-in);
 }
 
+input::placeholder {
+  color: hsl(var(--clr-muted));
+}
+
 input:focus {
   outline: 2px solid transparent;
-  /* box-shadow: 0px 0px 0px 3px hsl(var(--clr-background)),  */
-  /* 0px 0px 0px 6px hsl(var(--clr-accent)); */
-  box-shadow: 0px 0px 0px 3px hsl(var(--clr-background));
+  box-shadow: 0px 0px 0px 3px hsl(var(--clr-background)), 
+  0px 0px 0px 6px hsl(var(--clr-accent));
 }
 
-input::placeholder {
-  color: hsl(var(--muted));
-}
 
 input.error {
-  background-color: hsl(var(--clr-error) / 0.4);
-  box-shadow: 0 0 0 2px hsl(var(--clr-accent));
-  color: hsl(var(--clr-accent));
+  background-color: hsl(var(--error) / 0.4);
+  box-shadow: 0 0 0 2px hsl(var(--accent));
+  color: hsl(var(--accent));
+}
+
+.error-message {
+  color: hsl(var(--accent));
 }
 
 fieldset {
-    border: none;
-    padding: 0;
-    text-align: center;
-    max-width: 300px;
+  border: none;
+  padding: 0;
+  text-align: center;
+  max-width: 300px;
 }
 
 fieldset > * {
