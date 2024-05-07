@@ -25,8 +25,18 @@ function showErrors() {
     input.classList.add('error');
 }
 
-signupForm.addEventListener('submit', (e) => {
+function handleSubmit(e) {
+
     e.preventDefault();
+
+    const data = {};
+    const fields = e.target.querySelectorAll('input, select, textarea');
+
+    for (const field of fields) {
+        data[field.name] = field.value;
+    }
+
+    console.log(data)
     const email = signupForm.querySelector('#email')
     const valid = isValidEntry(email.value); 
     if (!valid) {
@@ -36,9 +46,11 @@ signupForm.addEventListener('submit', (e) => {
         updateSuccessMsg(email.value);
         toggleMainAndSuccess();
     }
-});
+}
 
 dismiss.addEventListener('click', () => {
     toggleMainAndSuccess();
     updateSuccessMsg('');
 })
+
+signupForm.addEventListener('submit', handleSubmit);

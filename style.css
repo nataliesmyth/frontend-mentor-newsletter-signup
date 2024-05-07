@@ -250,14 +250,17 @@ legend {
   padding-bottom: 1em;
 }
 
+.success-page > .text > p {
+  max-width: 40ch;
+}
+
 .success-title {
-  margin: 0;
+  margin: 0 0 .5em 0;
   line-height: 1.15em;
-  margin-bottom: 1em;
 }
 
 .success-img {
-  margin-top: 1em;
+  /* margin-top: 1em; */
   margin-bottom: 2em;
 }
 
@@ -304,13 +307,14 @@ legend {
 
 @media (min-width: 770px) {
   main {
-    max-width: 900px;
+    max-width: 504px;
     border-radius: 10px;
     margin: 2em auto;
   }
+
   main > .success-page {
-    width: 1000px;
-    margin: 2em auto;
+    width: 504px;
+    margin: 0 auto;
   }
 
   .success-page > * {
@@ -321,7 +325,7 @@ legend {
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+
   .signup-pg {
     justify-content: center;
     flex-direction: row-reverse;
@@ -329,8 +333,8 @@ legend {
   }
 
   .col-content {
-    max-width: 400px;
-    padding: 1em;
+    max-width: 504px;
+    padding: 3em 5em;
   }
 
   fieldset {
@@ -339,7 +343,7 @@ legend {
 
   h1 {
     font-size: 2.85em;
-    letter-spacing: .05em;
+    /* letter-spacing: .05em; */
     margin-top: 0;
     margin-bottom: 0;
     line-height: 2em;
