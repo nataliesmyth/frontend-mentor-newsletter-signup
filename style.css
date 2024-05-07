@@ -114,7 +114,7 @@ body {
 
 main {
   background-color: hsl(var(--clr-background));
-  margin: 2em auto;
+  margin: 0 auto;
   /* border-radius: 10px; */
   max-width: 400px;
 }
@@ -293,7 +293,9 @@ legend {
 /*** Footer ***/
 
 .attribution {
+  padding-block-start: 1.25em;
   color: hsl(var(--clr-background));
+  font-size: 11px;
 }
 
 .attribution a {
@@ -319,11 +321,11 @@ legend {
     margin-top: 0;
     margin-bottom: 0;
   }
+  
   .signup-pg {
     justify-content: center;
     flex-direction: row-reverse;
-    margin: 1em;
-    padding: 2em;
+    padding: 1em;
   }
 
   .col-content {
